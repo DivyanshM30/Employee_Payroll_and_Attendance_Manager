@@ -33,9 +33,42 @@ A Java & Maven-based payroll management system that automates salary calculation
 # Clone repository
 git clone https://github.com/your-username/employee-payroll-system.git
 cd employee-payroll-system
-
+```
 # Build project
 mvn -q -DskipTests package
 
 # Run Main class
 mvn -q exec:java
+Or simply run `Main.java` from your IDE.  
+
+---
+
+## 📂 Output  
+
+- **PDF Payslips** → stored in `./output/` as `Payslip_<EmployeeID>.pdf`  
+- **Excel Payroll Report** → stored in `./output/Payroll.xlsx`  
+
+---
+
+## 🛠️ Tech Stack  
+
+- **Java 17+**  
+- **Maven** (dependency management & build)  
+- **Apache PDFBox** → PDF payslips  
+- **Apache POI** → Excel reports  
+
+---
+
+## ⚠️ Notes  
+
+- Tax slabs in this project are **illustrative** only (not official).  
+  - Modify `SlabTaxRule` to adapt for your country’s tax rules.  
+
+---
+
+## 📌 Future Enhancements (Ideas that will be implemented soon)  
+
+- GUI Dashboard (JavaFX / Spring Boot + Web UI)  
+- Database Integration (MySQL / PostgreSQL)  
+- Role-based authentication (HR/Admin/Employee)  
+- Automated email delivery of payslips  
